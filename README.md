@@ -47,4 +47,4 @@ This project is proof of what I can do:
 
 
 ## Get in touch
-Have questions or want to chat about the project? Reach out on [GitHub](https://github.com/mostafa-ghaedi) or email me at your.email@example.com.
+Have questions or want to chat about the project? Reach out on [GitHub](https://github.com/mostafa-ghaedi) or email me at mustafa.ghaedi@gmail.com.
