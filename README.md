@@ -34,7 +34,6 @@ I built all this step-by-step, which was challenging but super rewarding!
 
 ## Results
 - **Accuracy**: ~85% on the test data.
-- **Training Time**: Takes about 10-15 minutes on a regular computer.
 - **What I Learned**: I figured out how to make the network learn better by tweaking things like the learning speed and fixing issues like numbers getting too big during calculations.
 - **Challenges**: It wasn’t easy! I had to learn how to balance the network’s settings to get good results without making it too slow.
 
