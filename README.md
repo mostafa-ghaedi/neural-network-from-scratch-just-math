@@ -1,78 +1,50 @@
-# Neural Network from Scratch for MNIST Digit Recognition
+# Handwritten Digit Recognition with a Neural Network
 
-## Overview
-This project implements a fully functional neural network from scratch to classify handwritten digits from the MNIST dataset, achieving an accuracy of approximately 85%. Built using only NumPy for matrix operations and Pandas for data handling, this project demonstrates a deep understanding of neural network fundamentals, including forward propagation, backpropagation, and gradient-based optimization. By avoiding deep learning frameworks like TensorFlow or PyTorch, the implementation showcases my ability to translate mathematical concepts into efficient code, highlighting skills in Python programming, machine learning, and problem-solving.
+## What is this project?
+This project is a neural network I built from scratch to recognize handwritten digits (0-9) from the MNIST dataset. It can correctly identify about 85% of the digits in the test data! I used only Python, NumPy, and Pandas, without any fancy machine learning libraries like TensorFlow.
+and it shows my ability to understand and code the math behind neural networks, solve problems, and write clean Python code.
 
-The goal of this project is to not only solve the digit classification task but also to document my mastery of neural network theory and practical implementation, making it a valuable addition to my portfolio.
 
-## Dataset
-The [MNIST dataset](https://www.kaggle.com/datasets/oddrationale/mnist-in-csv) from Kaggle consists of 60,000 training images and 10,000 testing images of handwritten digits (0-9), each represented as a 28x28 grayscale image. The data is provided in CSV format, making it easy to process with Pandas.
+## What’s the MNIST Dataset?
+The [MNIST dataset](https://www.kaggle.com/datasets/oddrationale/mnist-in-csv) is a collection of 60,000 training images and 10,000 testing images of handwritten digits. Each image is a 28x28 pixel grayscale picture of a number from 0 to 9. The data comes in CSV files, which I loaded using Pandas to make it easy to work with.
 
-## Features
-- **From-Scratch Implementation**: A fully custom-built neural network with manual forward and backward propagation, coded without reliance on deep learning libraries.
-- **Multi-Layer Perceptron (MLP)**: Comprises an input layer (784 neurons for 28x28 pixels), multiple hidden layers with ReLU activation, and an output layer with softmax for 10-class classification.
-- **Optimization**: Utilizes stochastic gradient descent (SGD) with cross-entropy loss to update weights.
-- **Demonstrated Skills**:
-  - Deep understanding of neural network mathematics, including forward/backward propagation, gradient computation, and loss functions.
-  - Proficient Python programming with clean, modular code.
-  - Data preprocessing and management using Pandas.
-  - Problem-solving through hyperparameter tuning and performance optimization.
+## Why is this project cool?
+- **Built from Scratch**: I coded the entire neural network myself, including how it learns and makes predictions, without using pre-made tools. This helped me understand the math and logic behind neural networks.
+- **Simple Tools**: I only used NumPy for math calculations and Pandas for handling data, keeping things lightweight.
+- **My Learning Journey**: This project shows how I tackled a complex problem, learned new concepts, and built something that works!
+- **Skills Showcased**:
+  - Writing clear Python code.
+  - Understanding how neural networks learn (like how they adjust to get better).
+  - Solving problems when things didn’t work at first.
+  - Working with data to prepare it for the model.
 
-## Prerequisites
-- Python 3.8 or higher
-- NumPy (`pip install numpy`)
-- Pandas (`pip install pandas`)
+## What’s inside the neural network?
+Think of the neural network like a brain with layers of “neurons”:
+- **Input Layer**: Takes the 784 pixels (28x28) from each image.
+- **Hidden Layers**: Processes the data using ReLU (a math function that helps the network learn patterns).
+- **Output Layer**: Gives a guess for which digit (0-9) the image is, using softmax (a way to pick the most likely answer).
+- **Learning Process**: The network learns by trying, making mistakes, and adjusting its “weights” (like tuning a musical instrument) using a method called stochastic gradient descent (SGD) and a loss function called cross-entropy.
 
-## Installation
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/mnist-neural-network.git
-   cd mnist-neural-network
-   ```
-2. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-3. Download the MNIST dataset from [Kaggle](https://www.kaggle.com/datasets/oddrationale/mnist-in-csv) and place `mnist_train.csv` and `mnist_test.csv` in the project directory.
+I built all this step-by-step, which was challenging but super rewarding!
 
-## Usage
-1. Train the model:
-   ```bash
-   python train.py
-   ```
-2. Evaluate the model on the test set:
-   ```bash
-   python evaluate.py
-   ```
-3. The model outputs predictions and achieves approximately 85% accuracy on the test set.
-
-## Code Structure
-- `train.py`: Handles data preprocessing, model training, and implementation of forward/backward propagation.
-- `evaluate.py`: Loads the trained model and evaluates its performance on the test set.
-- `utils.py`: Contains helper functions for activation functions (ReLU, softmax), loss computation, and gradient calculations.
-- `data/`: Directory for storing MNIST CSV files.
+## What you need to run it
+- Python 3.8 or newer
+- NumPy (for math stuff): `pip install numpy`
+- Pandas (for handling data): `pip install pandas`
 
 ## Results
-- **Accuracy**: ~85% on the MNIST test set.
-- **Training Time**: Approximately 10-15 minutes on a standard CPU (varies by hardware).
-- **Loss**: Cross-entropy loss decreases consistently during training.
-- **Key Challenges Overcome**:
-  - Managed numerical stability issues, such as gradient overflow, through careful implementation.
-  - Optimized hyperparameters (e.g., learning rate, batch size) to balance accuracy and training speed.
-  - Designed an efficient MLP architecture to achieve high accuracy with minimal computational resources.
+- **Accuracy**: ~85% on the test data.
+- **Training Time**: Takes about 10-15 minutes on a regular computer.
+- **What I Learned**: I figured out how to make the network learn better by tweaking things like the learning speed and fixing issues like numbers getting too big during calculations.
+- **Challenges**: It wasn’t easy! I had to learn how to balance the network’s settings to get good results without making it too slow.
 
-## Skills Demonstrated
-This project highlights the following competencies:
-- **Mathematical Understanding**: Manual implementation of forward/backward propagation, gradient computation, and loss optimization.
-- **Programming Proficiency**: Clean, modular, and efficient Python code using NumPy for matrix operations.
-- **Problem-Solving**: Addressed challenges like tuning hyperparameters and handling large datasets.
-- **Independent Learning**: Developed a complex neural network without relying on pre-built frameworks, showcasing a deep grasp of machine learning concepts.
+## Skills I’m Showing Off
+This project is proof of what I can do:
+- **Coding**: I wrote clean, organized Python code that’s easy to follow.
+- **Math**: I understood and coded the math behind neural networks, like how they learn from mistakes.
+- **Problem-Solving**: I fixed bugs and improved the network when it wasn’t working well.
+- **Learning**: I taught myself how to build this without relying on pre-made libraries, which was a big challenge!
 
-## Contributing
-Contributions are welcome! Feel free to open an issue or submit a pull request with improvements, such as enhancing accuracy or adding visualization features.
 
-## Contact
-For questions or feedback, reach out via [GitHub](https://github.com/yourusername) or email at your.email@example.com.
-
-## License
-This project is licensed under the MIT License.
+## Get in touch
+Have questions or want to chat about the project? Reach out on [GitHub](https://github.com/mostafa-ghaedi) or email me at your.email@example.com.
